@@ -1,3 +1,4 @@
+
 name: Call API on Push
 
 on:
@@ -9,6 +10,9 @@ jobs:
   call-api:
     runs-on: ubuntu-latest
     steps:
-      - name: Make API Request
+      - name: Make API Request to Huawei Cloud Pipeline
         run: |
-          curl -X POST https://cloudpipeline-ext.ap-southeast-3.myhuaweicloud.com/v5/ce4b919b048c48928854517c7d74eb46/pipelines/6ef286fc59b04fa6a3e15bc25f0c4a4e/webhook/callback-run/ap-southeast-3?access_token=3f8dc5312d5f4eb6b8abb12ab5cebe03
+          curl -X POST \
+            -H "Content-Type: application/json" \
+            -d '{}' \
+            "https://cloudpipeline-ext.ap-southeast-3.myhuaweicloud.com/v5/ce4b919b048c48928854517c7d74eb46/pipelines/6ef286fc59b04fa6a3e15bc25f0c4a4e/webhook/callback-run/ap-southeast-3?access_token=3f8dc5312d5f4eb6b8abb12ab5cebe03"
