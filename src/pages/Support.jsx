@@ -42,7 +42,7 @@ const Settings = () => {
         </section>
         <section className="support-developer d-flex align-items-start justify-content-center w-100 flex-column">
           <p className="py-2 text-muted">
-            Few ways you can support the project
+           test Few ways you can support the project
           </p>
 
           <section className="sponsor-me text-muted text-start">
